@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200121 15:48:39.738" rpa="false">
+<suite id="s1" name="Apium2" source="C:\Users\lmelgarejo\Desktop\otravezApium\Apium2.robot">
+<test id="s1-t1" name="test de Ingreso">
+<kw name="setup and open android phone1" library="Key1">
+<doc>ingresar a la app LSA</doc>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>appPackage=com.proyectossolidarios</arg>
+<arg>newCommandTimeout=2500</arg>
+<arg>appActivity=.MainActivity</arg>
+</arguments>
+<status status="PASS" starttime="20200121 15:48:40.968" endtime="20200121 15:48:58.916"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:48:40.967" endtime="20200121 15:48:58.916"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>50s</arg>
+</arguments>
+<msg timestamp="20200121 15:49:48.919" level="INFO">Slept 50 seconds</msg>
+<status status="PASS" starttime="20200121 15:48:58.916" endtime="20200121 15:49:48.919"></status>
+</kw>
+<doc>Ingresar a la aplicacion</doc>
+<tags>
+<tag>tc1</tag>
+</tags>
+<status status="PASS" starttime="20200121 15:48:40.966" endtime="20200121 15:49:48.920" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Seleccionar una opcion">
+<kw name="Seleccionar Alfabeto" library="Key1">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]</arg>
+</arguments>
+<msg timestamp="20200121 15:49:48.927" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]'.</msg>
+<status status="PASS" starttime="20200121 15:49:48.924" endtime="20200121 15:49:49.899"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:49:48.923" endtime="20200121 15:49:49.900"></status>
+</kw>
+<kw name="Seleccionar Alfabeto Dactilogico" library="Key1">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]</arg>
+</arguments>
+<msg timestamp="20200121 15:49:49.905" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]'.</msg>
+<status status="PASS" starttime="20200121 15:49:49.901" endtime="20200121 15:49:51.225"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:49:49.900" endtime="20200121 15:49:51.225"></status>
+</kw>
+<kw name="Reproducir video" library="Key1">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]</arg>
+</arguments>
+<msg timestamp="20200121 15:49:51.230" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]'.</msg>
+<status status="PASS" starttime="20200121 15:49:51.227" endtime="20200121 15:49:52.458"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:49:51.226" endtime="20200121 15:49:52.459"></status>
+</kw>
+<kw name="Volver al alfabeto" library="Key1">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView</arg>
+</arguments>
+<msg timestamp="20200121 15:49:52.463" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20200121 15:49:52.460" endtime="20200121 15:49:53.252"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:49:52.459" endtime="20200121 15:49:53.253"></status>
+</kw>
+<doc>Ingresar a la opcion Alfabeto</doc>
+<tags>
+<tag>tc2</tag>
+</tags>
+<status status="PASS" starttime="20200121 15:49:48.922" endtime="20200121 15:49:53.253" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Seleccionar Buscar">
+<kw name="Realizar busqueda" library="Key1">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView</arg>
+</arguments>
+<msg timestamp="20200121 15:49:53.259" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20200121 15:49:53.257" endtime="20200121 15:49:54.161"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+<arg>${Palabra}</arg>
+</arguments>
+<msg timestamp="20200121 15:49:54.166" level="INFO">Typing text 'Casa' into text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20200121 15:49:54.162" endtime="20200121 15:49:56.147"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>${Palabra}</arg>
+<arg>exact_match=True</arg>
+</arguments>
+<status status="PASS" starttime="20200121 15:49:56.148" endtime="20200121 15:49:57.172"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:49:53.256" endtime="20200121 15:49:57.172"></status>
+</kw>
+<doc>Realizar una busqueda en la app</doc>
+<tags>
+<tag>tc3</tag>
+</tags>
+<status status="PASS" starttime="20200121 15:49:53.255" endtime="20200121 15:49:57.173" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Limpiar Busqueda">
+<kw name="Limpiar el campo busqueda" library="Key1">
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText</arg>
+</arguments>
+<msg timestamp="20200121 15:49:57.179" level="INFO">Clear text field 'xpath=//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20200121 15:49:57.176" endtime="20200121 15:49:58.612"></status>
+</kw>
+<status status="PASS" starttime="20200121 15:49:57.175" endtime="20200121 15:49:58.612"></status>
+</kw>
+<doc>Limpiar el campo busqueda</doc>
+<tags>
+<tag>tc4</tag>
+</tags>
+<status status="PASS" starttime="20200121 15:49:57.174" endtime="20200121 15:49:58.613" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200121 15:48:39.774" endtime="20200121 15:49:58.615"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">tc1</stat>
+<stat pass="1" fail="0">tc2</stat>
+<stat pass="1" fail="0">tc3</stat>
+<stat pass="1" fail="0">tc4</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Apium2">Apium2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
